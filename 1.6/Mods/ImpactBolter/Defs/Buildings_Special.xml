@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="VFEP_WarcasketWeaponBoxBase">
+        <defName>DV_Box_ImpactBolter</defName>
+        <label>warcasket impact bolter</label>
+        <description>An upscaled version of the impact SMG designed for use by a warcasket. It fires a burst of impact-tip shells, similar to the cannon, but with more precision thanks to the sight. The technology tech itself was originally of imperial make, but pirate scrappers have reverse engineered and adjusted scavenged impact guns to create this imposing weapon.</description>
+        <graphicData>
+            <texPath>Things/Item/WeaponsBoxed/ImpactBolter_OnFloor</texPath>
+        </graphicData>
+        <costList>
+            <Steel>140</Steel>
+            <Plasteel>70</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <Mass>30</Mass>
+            <WorkToBuild>70000</WorkToBuild>
+        </statBases>
+        <researchPrerequisites>
+            <li>VFEP_SpacerWarcasketWeaponry</li>
+            <li>DV_ImpactShot</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="VFEPirates.CompProperties_WeaponBox">
+                <weaponToEquip>DV_WarcasketGun_ImpactBolter</weaponToEquip>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

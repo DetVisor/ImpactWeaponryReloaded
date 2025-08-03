@@ -32,8 +32,8 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.9</MoveSpeed>
-      <StaggerDurationFactor>0.6</StaggerDurationFactor>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
+      <StaggerDurationFactor>-0.6</StaggerDurationFactor>
+      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <tradeTags>
       <li>HiTechArmor</li>
@@ -131,7 +131,7 @@
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>3</ComponentSpacer>
