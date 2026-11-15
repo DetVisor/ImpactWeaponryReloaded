@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>DV_AdrenalinePuff</defName>
+    <growthRate>-0.3</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/AirPuff</texPath>
+      <renderInstanced>true</renderInstanced>
+      <color>(161, 63, 47, 255)</color>      
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.04</fadeInTime>
+    <solidTime>0.3</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>DV_AdrenalineBreathing</defName>
+    <offsetMode>Free</offsetMode>    <!-- don't spawn attached, since the flecks already anchor themselves correctly, spawning attached can introduce bad offsets -->
+    <children>
+
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>DV_AdrenalinePuff</fleckDef>
+        <burstCount>1</burstCount>
+        <ticksBetweenMotes>30</ticksBetweenMotes>
+        <spawnLocType>OnSource</spawnLocType>
+        <positionRadius>0</positionRadius>
+        <scale>.7</scale>
+        <positionOffset>(0, 0, .10)</positionOffset>
+        <rotation>-50~50</rotation>
+        <rotationRate>0</rotationRate>
+        <absoluteAngle>True</absoluteAngle>
+        <fleckUsesAngleForVelocity>false</fleckUsesAngleForVelocity>
+        <speed>0</speed>
+      </li>
+
+    </children>
+  </EffecterDef>  
+</Defs>
